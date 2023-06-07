@@ -6,7 +6,7 @@ interface LayoutProps {
 
 const Layout = (props: LayoutProps) => {
   const { children } = props;
-  return <main className="h-full">{children}</main>;
+  return <main className="min-h-full">{children}</main>;
 };
 
 export default Layout;

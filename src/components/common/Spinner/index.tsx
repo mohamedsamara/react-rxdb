@@ -1,8 +1,27 @@
-const Spinner = () => {
+import classNames from 'classnames';
+import {
+  SpinnerSize,
+  SpinnerSizes,
+  SpinnerVariant,
+  SpinnerVariants,
+} from 'styles/theme';
+
+interface SpinnerProps {
+  variant?: SpinnerVariants;
+  size?: SpinnerSizes;
+  className?: string;
+}
+
+const Spinner = (props: SpinnerProps) => {
+  const { variant = 'basic', size = 'md', className } = props;
   return (
     <svg
       role="status"
-      className="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+      className={classNames(
+        SpinnerVariant[variant],
+        SpinnerSize[size],
+        className,
+      )}
       viewBox="0 0 100 101"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
