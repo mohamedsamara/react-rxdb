@@ -20,8 +20,8 @@
     "@testing-library/react",
     "cypress",
     "rxdb",
-    "tailwindcss",
-    "zod"
+    "zod",
+    "tailwindcss"
   ],
   "author": "Mohamed Samara (https://github.com/mohamedsamara)",
   "license": "MIT",
