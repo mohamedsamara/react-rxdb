@@ -6,11 +6,11 @@ export const ButtonVariant = {
   primary:
     'bg-blue-500 hover:bg-blue-700 text-white font-normal rounded disabled:opacity-25 inline-flex items-center justify-center',
   secondary:
-    'bg-slate-100 hover:bg-slate-200 text-slate-700 font-normal rounded disabled:opacity-25 inline-flex items-center justify-center',
+    'bg-slate-200 hover:bg-slate-300 text-slate-700 font-normal rounded disabled:opacity-25 inline-flex items-center justify-center',
   basic:
     'bg-gray-100 hover:bg-gray-200 text-gray-700 font-normal rounded disabled:opacity-25 inline-flex items-center justify-center',
   danger:
-    'bg-red-300 hover:bg-red-500 text-white font-normal rounded disabled:opacity-25 inline-flex items-center justify-center',
+    'bg-red-500 hover:bg-red-600 text-white font-normal rounded disabled:opacity-25 inline-flex items-center justify-center',
 };
 
 export const ButtonSize = {
@@ -40,7 +40,7 @@ export type SpinnerSizes = 'sm' | 'md' | 'lg';
 
 export const SpinnerVariant = {
   primary: 'text-gray-200 animate-spin fill-blue-600',
-  secondary: 'text-gray-200 animate-spin fill-slate-400',
+  secondary: 'text-gray-200 animate-spin fill-slate-600',
   basic: 'text-gray-200 animate-spin fill-gray-400',
 };
 
