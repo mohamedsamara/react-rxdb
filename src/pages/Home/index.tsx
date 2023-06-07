@@ -11,7 +11,7 @@ const Home = () => {
     <Layout>
       <div
         data-testid={HOME_TEST_ID}
-        className="container max-w-sm min-h-full px-4 py-12 mx-auto "
+        className="container max-w-sm min-h-full px-4 py-12 mx-auto"
       >
         <Notes notes={notes} />
       </div>
