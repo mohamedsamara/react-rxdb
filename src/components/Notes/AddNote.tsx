@@ -20,12 +20,12 @@ const AddNote = () => {
     resolver: zodResolver(noteFormSchema),
   });
   const [loading, setLoading] = useState(false);
-  const { saveNote } = useNotes();
+  const { addNote } = useNotes();
 
   const onSubmit: SubmitHandler<AddNoteForm> = async (data) => {
     try {
       setLoading(true);
-      await saveNote(data.title, data.content);
+      await addNote(data.title, data.content);
       await sleep();
       reset();
     } catch (error) {

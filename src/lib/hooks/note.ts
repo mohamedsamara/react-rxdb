@@ -8,7 +8,7 @@ export const useNotes = () => {
   );
   const collection = useRxCollection('notes');
 
-  const saveNote = async (title: string, content: string) => {
+  const addNote = async (title: string, content: string) => {
     await collection?.insert({
       id: uuidv4(),
       title,
@@ -21,5 +21,5 @@ export const useNotes = () => {
     await noteDoc?.remove();
   };
 
-  return { notes, saveNote, deleteNote };
+  return { notes, addNote, deleteNote };
 };
