@@ -1,4 +1,4 @@
-# React TOC
+# React RxDB
 
 # Description
 
